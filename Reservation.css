@@ -1,0 +1,357 @@
+
+* {
+   color: rgb(255, 255, 255);
+   font-family: "Bebas Neue";
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+
+}
+#close {
+   display: none;
+}
+
+.burger {
+   display: none;
+   align-self: center;
+   justify-self: center;
+}
+.burger div{
+  
+   width: 25px;
+   height: 3px;
+   background-color: white;
+   margin: 5px;
+}
+
+
+
+ul {
+   
+   display: flex;
+   justify-content: center;
+   gap: 25px;
+   list-style-type: none;
+}
+ul a {
+    text-decoration: none;
+   margin: auto;
+   font-family: "Montserrat";
+   color: #D1C7C7;
+   font-size: 1.5rem;
+   padding: 0px 25px;
+}
+nav img {
+   margin-top: 10px;
+   width: 80px;
+}
+nav  {
+   background: #3a3a3a;
+   padding-left: 10%;
+   gap: 20%;
+   justify-content: flex-start;
+   display: flex;
+   
+   
+}
+
+#fieldset {
+   padding: 6% 0;
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+   align-items: flex-start;
+   display: grid;
+   justify-content: center;
+   grid-gap: 15px;
+   grid-template-columns: 30% 30% ;
+   grid-template-rows: auto auto auto 40px;
+   background-color: rgb(94, 93, 93);
+   grid-template-areas:
+   "ct ts"
+   "ct pt"
+   "ct d"
+   "rs bt";
+
+}
+#Vehicle_type {
+   align-self: stretch;
+   grid-area: ct;
+   align-items: flex-start;
+   flex-direction: column;
+   display: flex;
+   border-radius: 20px;
+   padding: 2%;
+   background-color: rgb(83, 77, 77);
+}
+#Vehicle_type  label{
+   align-self: center;
+   font-size: 20px;
+}
+#transmission {
+   
+   border-radius: 20px;
+   padding: 2%;
+   background-color: rgb(83, 77, 77);
+}
+#ts {
+   color: rgb(0, 0, 0);
+}
+#result_p {
+   color: black;
+}
+#radiobuttons  label{
+   text-align: center;
+   font-size: 20px;
+}
+#radiobuttons {
+   grid-area: pt;
+   align-items: flex-start;
+   flex-direction: column;
+   display: flex;
+   border-radius: 20px;
+   padding: 2%;
+   background-color: rgb(83, 77, 77);
+}
+#time {
+   grid-area: d;
+   align-content: center;
+   flex-direction: column;
+   display: flex;
+   border-radius: 20px;
+   padding: 2%;
+   background-color: rgb(83, 77, 77);
+}
+#time p {
+   text-align: center;
+   font-size: 20px;
+}
+
+#time span input {
+   outline: none;
+   border-radius: 20px;
+   text-align: center;
+   width: 100%;
+   font-size: 20px;
+   padding: 12px 20px;
+   margin: 8px 0;
+   color: rgb(94, 91, 88);
+}
+#calc  button {
+   border: none;
+   background-color:rgb(83, 77, 77) ;
+   border-radius: 10px;
+   padding: 12px 20px;
+   text-align: center;
+   grid-area: bt;
+}
+#result  {
+   background-color:rgb(83, 77, 77) ;
+   border-radius: 10px;
+   padding: 12px 20px;
+   text-align: center;
+   grid-area: rs;
+}
+
+
+
+
+
+#cars scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px; 
+ }
+ #cars  {
+    overflow: hidden;
+    cursor:pointer;
+    display:inline-block;
+    position:relative;
+    font-family: monmontserrat;
+    color:rgb(34, 12, 12);
+    border:1px solid #ccc;
+    background-color: teal;
+    outline-color: chocolate;
+    
+}
+
+
+option:checked { 
+    color: red;
+    background-color: white;
+    background: rgb(196, 47, 21);
+ }
+
+ select:not(:checked) {
+    color: rgb(11, 158, 109);
+ }
+ #Vehicle_type {
+    display: flex;
+    flex-direction: column;
+ }
+ #Vehicle_type span {
+    margin: 5px 0;
+ }
+
+ @media only screen and (max-width:415px) {
+   .burger{
+       display: inline;
+       right: 5%;
+       top: 35%;
+       position: absolute;
+    
+   }
+   .burger div{
+       display: block;
+       width: 25px;
+       height: 3px;
+       background-color: white;
+       margin: 5px;
+   }
+   #close{
+       font-family: sans-serif;
+       font-size: 30px;
+       width: 25px;
+       color: white;
+       right: 6%;
+       top: 13%;
+       position: absolute;
+       display: none;
+   }
+ 
+
+   ul {
+   
+       display: none;
+       flex-direction: column;
+       justify-content: center;
+       gap: 25px;
+       list-style-type: none;
+   }
+    ul a {
+        text-decoration: none;
+       margin: auto;
+       font-family: "Montserrat";
+       color: #D1C7C7;
+       font-size: 1.5rem;
+       padding: 0px 25px;
+   }
+   nav img {
+       
+       margin-top: 10px;
+       width: 100px;
+
+   }
+   nav  {
+       position: relative;
+       background: #3a3a3a;
+       padding-left: 0%;
+       gap: 10%;
+       justify-content: center;
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       padding-bottom: 2%;
+       
+   }
+
+   #fieldset {
+      padding: 6% 0;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      align-items: flex-start;
+      display: grid;
+      justify-content: center;
+      grid-gap: 15px;
+      grid-template-columns: 90% ;
+      grid-template-rows: repeat(6,auto);
+      background-color: rgb(94, 93, 93);
+      grid-template-areas:
+      "ct "
+      "ts"
+      "pt"
+      "d"
+      "rs"
+      "bt";
+   
+   }
+   #Vehicle_type {
+      align-self: stretch;
+      grid-area: ct;
+      align-items: flex-start;
+      flex-direction: column;
+      display: flex;
+      border-radius: 20px;
+      padding: 2%;
+      background-color: rgb(83, 77, 77);
+   }
+   #Vehicle_type  label{
+      align-self: center;
+      font-size: 20px;
+   }
+   #transmission {
+      
+      border-radius: 20px;
+      padding: 2%;
+      background-color: rgb(83, 77, 77);
+   }
+   #ts {
+      color: rgb(0, 0, 0);
+   }
+   #result_p {
+      color: black;
+   }
+   #radiobuttons  label{
+      text-align: center;
+      font-size: 20px;
+   }
+   #radiobuttons {
+      grid-area: pt;
+      align-items: flex-start;
+      flex-direction: column;
+      display: flex;
+      border-radius: 20px;
+      padding: 2%;
+      background-color: rgb(83, 77, 77);
+   }
+   #time {
+      grid-area: d;
+      align-content: center;
+      flex-direction: column;
+      display: flex;
+      border-radius: 20px;
+      padding: 2%;
+      background-color: rgb(83, 77, 77);
+   }
+   #time p {
+      text-align: center;
+      font-size: 20px;
+   }
+   
+   #time span input {
+      outline: none;
+      border-radius: 20px;
+      text-align: center;
+      width: 100%;
+      font-size: 20px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      color: rgb(94, 91, 88);
+   }
+   #calc  button {
+      border: none;
+      background-color:rgb(83, 77, 77) ;
+      border-radius: 10px;
+      padding: 12px 20px;
+      text-align: center;
+      grid-area: bt;
+   }
+   #result  {
+      background-color:rgb(83, 77, 77) ;
+      border-radius: 10px;
+      padding: 12px 20px;
+      text-align: center;
+      grid-area: rs;
+   }
+   
+}

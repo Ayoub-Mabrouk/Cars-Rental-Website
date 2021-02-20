@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 1200 1200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill:#FFD700;
+        font-size: 123.847px;
+        font-family: Magneto;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #FFD700;
+        stroke-width: 12.12px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <text id="Rent_it" data-name="Rent it" class="cls-1" transform="matrix(1.293, 0, 0, 1.293, 296.915, 670.462)">Rent it</text>
+  <path  class="cls-2" d="M600,479.951c219.222,0,396.938,60.774,396.938,135.743S819.222,751.438,600,751.438,203.062,690.663,203.062,615.694,380.778,479.951,600,479.951Z"/>
+</svg>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Reservation.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <nav>
+        <span><img src="icons/rent it.png"></span>
+         <ul id="navv">
+             <a href="index.html">Home</a>
+             <a href="gallery.html">Gallery</a>
+             <a href="reservation.html">Reservation</a>
+             <a href="contact.html">Contact us</a>
+         </ul>
+         <div id="close" onclick="closee()">X</div>
+         <div class="burger" id="open" onclick="openn(id)">
+             
+             <div></div>
+             <div></div>
+             <div></div>
+         </div>
+     </nav>
+    <div id="fieldset">
+        <div id="Vehicle_type">
+            <label>choose a car type</label>
+            <br>
+            <span class="Radio_button">
+                <input onclick="Vehicle_type(this.value)" value="Moto" type="radio" name="vehicle-type" id="Moto">
+                <label for="Moto">Motorcycle</label>  
+                <span>10£/Day</span>               
+            </span>
+            <span class="Radio_button">
+                <input onclick="Vehicle_type(this.value)" value="Citadine" type="radio" name="vehicle-type" id="Citadine">
+                <label for="Citadine">Citadine(Supermini)</label>
+                <span>12£/Day</span>  
+            </span>
+            <span class="Radio_button">
+                <input onclick="Vehicle_type(this.value)" value="Compact" type="radio" name="vehicle-type" id="Compact">
+                <label for="Compact">Compact</label> 
+                <span>14£/Day</span>                
+            </span>
+            <span class="Radio_button">
+                <input onclick="Vehicle_type(this.value)" value="Berline" type="radio" name="vehicle-type" id="Berline">
+                <label for="Berline">Berline</label>
+                <span>20£/Day</span>  
+            </span>
+            <span class="Radio_button">
+                <input onclick="Vehicle_type(this.value)" value="Uv" type="radio" name="vehicle-type" id="Uv">
+                <label for="Uv">Utility vehicle</label>  
+                <span>16£/Day</span>      
+            </span>
+            <span class="Radio_button">
+                <input onclick="Vehicle_type(this.value)" value="Cm" type="radio" name="vehicle-type" id="Cm">
+                <label for="Cm">Construction machinery</label> 
+                <span>900£/Day</span>               
+            </span>
+            <span class="Radio_button">
+                <input onclick="Vehicle_type(this.value)" value="Truck" type="radio" name="vehicle-type" id="Truck">
+                <label for="Truck">Truck</label>
+                <span>250£/Day</span>  
+            </span>
+        </div>
+        <div id="transmission">
+            <p><span>Transmission: </span> <span id="ts"></span></p>
+        </div>
+        <div id="radiobuttons">
+            <label for="">Power type: </label>
+            <span>
+                <input name="energy-type" class="energy-type" type="radio" value="Electic">
+                <label>Electic</label>
+    
+            </span>
+            <span>
+                <input name="energy-type" class="energy-type" type="radio" value="Hybrid">
+                <label>Hybrid</label>
+                
+            </span>
+            <span>
+                <input name="energy-type" class="energy-type" type="radio" value="Gasoline">
+                <label>Gasoline</label>
+                
+            </span>
+            <span>
+                <input name="energy-type" class="energy-type" type="radio" value="Diesel">
+                <label>Diesel</label>
+                
+            </span>
+        </div>
+        <div id="time">
+            <p>Enter how many days: </p>
+            <span><input placeholder="Days"  min="1" id="days" type="number" ></span>    
+        </div>
+        <div id="calc">
+            <button onclick="calculate()">Calculate</button>
+        </div>
+        <div id="result">
+            <p> 
+                <span>money is:</span>
+                <span id="result_p"></span>
+            </p>
+        </div>
+        
+    </div>
+
+    <script src="Reservation.js">
+        
+    </script>
+</body>
+</html>
