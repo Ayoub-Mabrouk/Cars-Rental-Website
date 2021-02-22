@@ -26,6 +26,7 @@
 
 
 
+
 ul {
    
    display: flex;
@@ -152,45 +153,61 @@ nav  {
    text-align: center;
    grid-area: rs;
 }
-
-
-
-
-
-#cars scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px; 
- }
- #cars  {
-    overflow: hidden;
-    cursor:pointer;
-    display:inline-block;
-    position:relative;
-    font-family: monmontserrat;
-    color:rgb(34, 12, 12);
-    border:1px solid #ccc;
-    background-color: teal;
-    outline-color: chocolate;
-    
+footer{
+   padding: 5%;
+   background-color: rgb(17, 17, 17);
+}
+#footer {
+   margin: 0 auto;
+   width: 90%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+#links {
+   display: block;
+}
+#icons {
+   
+   align-items: flex-end;
+   display: flex;
+   gap: 10px;
+   flex-direction: column;
+   
+}
+#icons img {
+   
+   width:30px ;
+}
+.first  {
+   text-align: left;
+   
+   color: rgb(255, 255, 255);
+}
+#footer-content p {
+   padding-bottom: 20px;
+}
+#footer #links {
+   margin-bottom: 10px;
+}
+#footer .first #links a {
+   display: block;
+   padding: 5px 0px;
+}
+#copyright {
+   margin-top:30px ;
+   opacity: 70%;
+       font-size: 20px;
+   text-align: center;
 }
 
 
-option:checked { 
-    color: red;
-    background-color: white;
-    background: rgb(196, 47, 21);
- }
 
- select:not(:checked) {
-    color: rgb(11, 158, 109);
- }
- #Vehicle_type {
-    display: flex;
-    flex-direction: column;
- }
- #Vehicle_type span {
-    margin: 5px 0;
- }
+
+
+
+
+
 
  @media only screen and (max-width:415px) {
    .burger{
@@ -353,5 +370,53 @@ option:checked {
       text-align: center;
       grid-area: rs;
    }
-   
+   footer{
+      padding: 5%;
+      background-color: rgb(17, 17, 17);
+  }
+  #footer {
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  #links {
+      display: block;
+  }
+  #icons {
+      order: 2;
+      align-items: flex-end;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      
+  }
+  #footer-content  {
+      order: 3;
+  }
+  #icons img {
+      
+      width:30px ;
+  }
+  .first  {
+      text-align: left;
+      
+      color: rgb(255, 255, 255);
+  }
+  #footer-content p {
+      padding-bottom: 20px;
+  }
+  #footer #links {
+      margin-bottom: 10px;
+  }
+  #footer .first #links a {
+      display: block;
+      padding: 5px 0px;
+  }
+  #copyright {
+      opacity: 70%;
+      font-size: 20px;
+      text-align: center;
+  }
 }

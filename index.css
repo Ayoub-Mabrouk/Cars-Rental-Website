@@ -231,18 +231,22 @@ main {
 .review-card:hover   {
     transform: scale(1.1);
 }
-footer {
+footer{
     padding: 5%;
     background-color: rgb(17, 17, 17);
+}
+#footer {
+    margin: 0 auto;
+    width: 90%;
     display: flex;
-
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 #links {
     display: block;
 }
 #icons {
-    flex: 30%;
+    
     align-items: flex-end;
     display: flex;
     gap: 10px;
@@ -251,22 +255,28 @@ footer {
 }
 #icons img {
     
-    width:10% ;
+    width:30px ;
 }
 .first  {
     text-align: left;
-    flex: 70%;
+    
     color: rgb(255, 255, 255);
 }
-footer p {
-    padding-bottom: 10px;
+#footer-content p {
+    padding-bottom: 20px;
 }
-footer #links {
-    margin-bottom: 30px;
+#footer #links {
+    margin-bottom: 10px;
 }
-footer .first #links a {
+#footer .first #links a {
     display: block;
-    padding: 20px 0px;
+    padding: 5px 0px;
+}
+#copyright {
+    margin-top:30px ;
+    opacity: 70%;
+        font-size: 20px;
+    text-align: center;
 }
 
 @media only screen and (max-width:415px) {
@@ -504,7 +514,55 @@ footer .first #links a {
     .review-card:hover   {
         transform: scale(1);
     }
-    
+    footer{
+        padding: 5%;
+        background-color: rgb(17, 17, 17);
+    }
+    #footer {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #links {
+        display: block;
+    }
+    #icons {
+        order: 2;
+        align-items: flex-end;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        
+    }
+    #footer-content  {
+        order: 3;
+    }
+    #icons img {
+        
+        width:30px ;
+    }
+    .first  {
+        text-align: left;
+        
+        color: rgb(255, 255, 255);
+    }
+    #footer-content p {
+        padding-bottom: 20px;
+    }
+    #footer #links {
+        margin-bottom: 10px;
+    }
+    #footer .first #links a {
+        display: block;
+        padding: 5px 0px;
+    }
+    #copyright {
+        opacity: 70%;
+        font-size: 20px;
+        text-align: center;
+    }
 
 
 

@@ -1,69 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Rent it</title>
+    <meta name="description" content="contact us of you have any question about our Vehicles">
+    <link rel="canonical" href="rentit.com/contact.html">
     <link rel="stylesheet" href="contact.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
+   
 </head>
+
 <body>
     <nav>
-        <span><img src="icons/rent it.png"></span>
-         <ul id="navv">
-             <a href="index.html">Home</a>
-             <a href="gallery.html">Gallery</a>
-             <a href="reservation.html">Reservation</a>
-             <a href="contact.html">Contact us</a>
-         </ul>
-         <div id="close" onclick="closee()">X</div>
-         <div class="burger" id="open" onclick="openn(id)">
-             
-             <div></div>
-             <div></div>
-             <div></div>
-         </div>
-     </nav>
-     <div id="inputs-container">
-         <div>
-             <label>Name:</label>
-             <input type="text" id="name" placeholder="insert your name">
-         </div>
-         <div >
+        <span><img src="icons/rent it.png"alt="rent it logo"></span>
+        <ul id="navv">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="contact.html">Contact us</a>
+        </ul>
+        <div id="close" onclick="closee()">X</div>
+        <div class="burger" id="open" onclick="openn(id)">
+
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div id="inputs-container">
+        <h1>Contact us</h1>
+        
+            <label>Name:</label>
+            <input type="text" id="user" placeholder="insert your name">
+       
             <label>Email:</label>
             <input type="text" id="email" placeholder="insert your email">
-        </div>
-        <div >
+        
             <label>Subject:</label>
             <input type="text" id="subject" placeholder="insert your email">
-        </div>
-        <div >
+        
             <label>Message:</label>
-            <input type="text" id="message" placeholder="insert your email">
+            <textarea name="" id="message" placeholder="insert your email" cols="30" rows="10"></textarea>
+       
+            <button onclick="submit_it()" id="send">Send</button>
+  
+    </div>
+    <div id="alert-it">
+        <div id="popup">
+            <p><span>Name: </span><span id="alert-name">Aypub</span></p>
+            <p><span>Email: </span><span id="alert-email">Aypub@gmail.com</span></p>
+            <p><span>Subject: </span><span id="alert-subject">about your courses</span></p>
+            <p><span>Message: </span><span id="alert-message">hi could jjghggjhgjhjjjjjjjjjjgjggjgjgjg</span></p>
+            <button id="alert-ok" onclick="hide_alert()">ok</button>
         </div>
-        <div>
-            <button id="send">Send</button>
+
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="first">
+                <ul id="links">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="reservation.html">Reservation</a>
+                    <a href="contact.html">Contact us</a>
+                </ul>
+            </div>
+            <div id="footer-content">
+                <p>contact@rentit.com</p>
+                <p>+212620814793209283</p>
+                <p>boulevard Zerktoni 1293 Safi Morocco</p>
+                <p>View on map</p>
+            </div>
+            <div id="icons">
+                <img src="icons/instagram.svg">
+                <img src="icons/twitter.svg">
+                <img src="icons/facebook.svg">
+                <img src="icons/linkedin.svg">
+            </div>
         </div>
-     </div>
-    <script>
-        //drop down menu
-var close = document.querySelector("#close")
-    var open = document.querySelector("#open")
-    var navv = document.querySelector("#navv")
-    function openn(e){
-        navv.style.display = "flex"
-        open.style.display = "none"
-        close.style.display = "inline"
-    }
-    function closee(){
-        navv.style.display = "none"
-        open.style.display = "inline"
-        close.style.display = "none"
-    }
-    </script>
+        <div id="copyright">
+            <p> © 2021 Trustpilot, Inc. All rights reserved. </p>
+        </div>
+    </footer>
+    <script src="contact.js"></script>
 </body>
+
 </html>

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vehicle Gallery</title>
+    <meta name="description" content="photos of Vehicles that we have">
+    <link rel="canonical" href="rentit.com/gallery.html">
     <link rel="stylesheet" href="gallery.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -13,7 +15,7 @@
 </head>
 <body>
     <nav>
-        <span><img src="icons/rent it.png"></span>
+        <span><img src="icons/rent it.png" alt="rent it logo"></span>
          <ul id="navv">
              <a href="index.html">Home</a>
              <a href="gallery.html">Gallery</a>
@@ -29,35 +31,77 @@
          </div>
      </nav>
      <div id="photos-container">
+        <h1>Gallery</h1>
         <div class="card">
-            <img src="/cars/home photos/berline.jpg">
+            <img src="/cars/home photos/berline.jpg" alt="berline car">
             <p>AutoRentals is ranked number one by Smartertravel as The best car rental booking site in 2020 and provides excellent pricing on a wide range of vehicles. </p>
         </div>
         <div class="card">
-            <img src="/cars/home photos/moto.jpg">
+            <img src="/cars/home photos/moto.jpg" alt="motorcyle">
             <p>AutoRentals is ranked number one by Smartertravel as The best car rental booking site in 2020 and provides excellent pricing on a wide range of vehicles. </p>
         </div>
         <div class="card">
-            <img src="/cars/home photos/julio nery.jpg">
+            <img src="/cars/home photos/julio nery.jpg" alt="motorcyle">
             <p>AutoRentals is ranked number one by Smartertravel as The best car rental booking site in 2020 and provides excellent pricing on a wide range of vehicles. </p>
         </div>
         <div class="card">
-            <img src="/cars/home photos/julio nery.jpg">
+            <img src="/cars/home photos/julio nery.jpg" alt="julio nery">
             <p>AutoRentals is ranked number one by Smartertravel as The best car rental booking site in 2020 and provides excellent pricing on a wide range of vehicles. </p>
         </div>
         <div class="card">
-            <img src="/cars/home photos/kango.jpg">
+            <img src="/cars/home photos/kango.jpg" alt="kangoo uv">
             <p>AutoRentals is ranked number one by Smartertravel as The best car rental booking site in 2020 and provides excellent pricing on a wide range of vehicles. </p>
         </div>
         <div class="card">
-            <img src="/cars/home photos/engine chantier.jpg">
+            <img src="/cars/home photos/engine chantier.jpg" alt="Utility vehicle">
             <p>AutoRentals is ranked number one by Smartertravel as The best car rental booking site in 2020 and provides excellent pricing on a wide range of vehicles. </p>
         </div>
         <div class="card">
-            <img src="/cars/home photos/truck.jpg">
+            <img src="/cars/home photos/truck.jpg" alt="truck">
             <p>AutoRentals is ranked number one by Smartertravel as The best car rental booking site in 2020 and provides excellent pricing on a wide range of vehicles. </p>
         </div>
     </div>
-    
+    <footer>
+        <div id="footer">
+            <div class="first">
+                <ul id="links">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="reservation.html">Reservation</a>
+                    <a href="contact.html">Contact us</a>
+                </ul>
+            </div>
+            <div id="footer-content">
+                <p>contact@rentit.com</p>
+                <p>+212620814793209283</p>
+                <p>boulevard Zerktoni 1293 Safi Morocco</p>
+                <p>View on map</p>
+            </div>
+            <div id="icons">
+                <img src="icons/instagram.svg">
+                <img src="icons/twitter.svg">
+                <img src="icons/facebook.svg">
+                <img src="icons/linkedin.svg">
+            </div>
+        </div>
+        <div id="copyright">
+            <p> © 2021 Trustpilot, Inc. All rights reserved. </p>
+        </div>
+    </footer>
+    <script>
+        var close = document.querySelector("#close")
+    var open = document.querySelector("#open")
+    var navv = document.querySelector("#navv")
+    function openn(e){
+        navv.style.display = "flex"
+        open.style.display = "none"
+        close.style.display = "inline"
+    }
+    function closee(){
+        navv.style.display = "none"
+        open.style.display = "inline"
+        close.style.display = "none"
+    }
+    </script>
 </body>
 </html>
